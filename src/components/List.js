@@ -6,7 +6,6 @@ const TaskList = styled.ul`
   list-style-type: none;
 `
 
-
 export default class List extends Component {
 
   render() {
