@@ -3,6 +3,8 @@
 
 Le projet a été créé avec https://github.com/facebookincubator/create-react-app
 
+*Branche master intouchable, branche develop pour le développement.*
+
 ### Voir le projet
 
 Cloner le repo puis 
@@ -17,7 +19,8 @@ Pour lancer l'app :
 Aller sur la branche **feature/Step_1** :
 `git checkout feature/Step_1`
 
-Initialisation du projet de base avec le package.json.
+**Initialisation** du projet de base avec le package.json.
+
 
 Fichiers de bases inclus avec create-react-app
 
@@ -26,7 +29,11 @@ Fichiers de bases inclus avec create-react-app
 Aller sur la branche **feature/Step_2** :
 `git checkout feature/Step_2`
 
-Création du composant basique Title.
+Création du composant basique **Title**. 
+
+Import et utilisation dans src/App.js.
+
+**Render** du DOM dans index.js
 
 #### Etape 3
 
@@ -36,9 +43,5 @@ Aller sur la branche **feature/Step_3** :
 Création des autres composants.
 
 **List** et **Item** jouant avec les states et les props.
-
-
-
-Branche master intouchable, branche develop pour le développement.
 
 *Brought to you with love from Julie Manhes, Samy Yahia, Cyril Vinikoff & Fanny Pourtier :)*
