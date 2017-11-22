@@ -18,6 +18,7 @@ Aller sur la branche **feature/Step_1** :
 `git checkout feature/Step_1`
 
 Initialisation du projet de base avec le package.json.
+
 Fichiers de bases inclus avec create-react-app
 
 #### Etape 2
@@ -33,6 +34,7 @@ Aller sur la branche **feature/Step_3** :
 `git checkout feature/Step_3`
 
 Création des autres composants.
+
 **List** et **Item** jouant avec les states et les props.
 
 
