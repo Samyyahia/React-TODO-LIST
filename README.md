@@ -14,13 +14,29 @@ Pour lancer l'app :
 ### Voir l'avancée étape par étape
 #### Etape 1
 
-Aller sur la branche feature/Step_1 :
+Aller sur la branche **feature/Step_1** :
 `git checkout feature/Step_1`
 
+Initialisation du projet de base avec le package.json.
+Fichiers de bases inclus avec create-react-app
+
+#### Etape 2
+
+Aller sur la branche **feature/Step_2** :
+`git checkout feature/Step_2`
+
+Création du composant basique Title.
+
+#### Etape 3
+
+Aller sur la branche **feature/Step_3** :
+`git checkout feature/Step_3`
+
+Création des autres composants.
+**List** et **Item** jouant avec les states et les props.
 
 
-3) step 2
 
-4) step 3
+Branche master intouchable, branche develop pour le développement.
 
 *Brought to you with love from Julie Manhes, Samy Yahia, Cyril Vinikoff & Fanny Pourtier :)*
