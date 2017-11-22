@@ -19,13 +19,13 @@ export default class AddTaskField extends Component {
     const {
       label,
       onClick,
-    } = this.props
+    } = this.props;
 
     return(
       <div>
         <Label>{label}</Label>
         <input type="text"/>
-        <Button onClick={onClick}>Ajoutay !</Button>
+        <Button onClick={onClick}>Ajoutayyy !</Button>
       </div>
     );
   }
