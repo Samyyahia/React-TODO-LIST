@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Title from './components/Title';
 
 class App extends Component {
   render() {
-    return null;
+    return  <Title>React TODO List</Title>;
   }
 }
 
