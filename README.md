@@ -3,6 +3,8 @@
 
 Le projet a été créé avec https://github.com/facebookincubator/create-react-app
 
+*Branche master intouchable, branche develop pour le développement.*
+
 ### Voir le projet
 
 Cloner le repo puis 
@@ -34,9 +36,5 @@ Aller sur la branche **feature/Step_3** :
 
 Création des autres composants.
 **List** et **Item** jouant avec les states et les props.
-
-
-
-Branche master intouchable, branche develop pour le développement.
 
 *Brought to you with love from Julie Manhes, Samy Yahia, Cyril Vinikoff & Fanny Pourtier :)*
