@@ -43,8 +43,6 @@ export default class AddTaskField extends Component {
   render() {
     const {
       label,
-      handleSubmit,
-      handleChange,
     } = this.props;
 
     return(
