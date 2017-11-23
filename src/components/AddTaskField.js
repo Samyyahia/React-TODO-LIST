@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import List from './List';
 
 const Label = styled.label`
   color: grey;
@@ -14,18 +15,44 @@ const Button = styled.button`
 `
 
 export default class AddTaskField extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        arr: [],
+        value: ''
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    if (this.state.value === '') {
+      return false;
+    } else {
+      var newArray = this.state.arr.slice();
+      newArray.push(this.state.value);
+      this.setState({arr:newArray, value:''});
+    }
+  }
 
   render() {
     const {
       label,
-      onClick,
+      handleSubmit,
+      handleChange,
     } = this.props;
 
     return(
       <div>
         <Label>{label}</Label>
-        <input type="text"/>
-        <Button onClick={onClick}>Ajoutayyy !</Button>
+        <input type="text"  value={this.state.value} onChange={this.handleChange} />
+        <Button onClick={this.handleSubmit}>Ajoutayyy !</Button>
+        <List tasks={this.state.arr} />
       </div>
     );
   }
