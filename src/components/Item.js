@@ -30,8 +30,8 @@ export default class Item extends Component {
 
     return(
       <OneItem key={task} done={this.state.done}>
-        <input type="checkbox" onClick={this.onClick}/>
-        { task }
+        <input type="checkbox" id="tasks" onClick={this.onClick}/>
+        <label for="tasks">{ task }</label>
       </OneItem>
     )
   }
