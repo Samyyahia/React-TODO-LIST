@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const OneItem = styled.li`
-  color: grey;
-  text-decoration: ${(props) => props.done ? 'line-through' : 'none'};
+color: grey;
+text-align:center;
+text-decoration: ${(props) => props.done ? 'line-through' : 'none'};
 `
 
 export default class Item extends Component {
@@ -29,8 +30,8 @@ export default class Item extends Component {
 
     return(
       <OneItem key={task} done={this.state.done}>
-        <input type="checkbox" onClick={this.onClick}/>
-        { task }
+        <input type="checkbox" id="tasks" onClick={this.onClick}/>
+        <label for="tasks">{ task }</label>
       </OneItem>
     )
   }

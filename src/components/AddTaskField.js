@@ -24,6 +24,7 @@ export default class AddTaskField extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleAdd = this.handleAdd.bind(this);
   }
 
   handleChange(event) {
@@ -40,6 +41,15 @@ export default class AddTaskField extends Component {
     }
   }
 
+  handleAdd(event){
+    if (event.charCode == 13) {
+      this.handleSubmit(event);
+    }
+    if (event.keyCode == 13) {
+      this.handleSubmit(event);
+    }
+  }
+
   render() {
     const {
       label,
@@ -48,7 +58,7 @@ export default class AddTaskField extends Component {
     return(
       <div>
         <Label>{label}</Label>
-        <input type="text"  value={this.state.value} onChange={this.handleChange} />
+        <input type="text"  value={this.state.value} onChange={this.handleChange} onKeyPress={this.handleAdd}/>
         <Button onClick={this.handleSubmit}>Ajoutayyy !</Button>
         <List tasks={this.state.arr} />
       </div>
