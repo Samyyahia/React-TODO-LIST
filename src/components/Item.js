@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const OneItem = styled.li`
-  color: grey;
-  text-decoration: ${(props) => props.done ? 'line-through' : 'none'};
+color: grey;
+text-align:center;
+text-decoration: ${(props) => props.done ? 'line-through' : 'none'};
 `
 
 export default class Item extends Component {
